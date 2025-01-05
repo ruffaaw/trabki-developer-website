@@ -1,26 +1,8 @@
-"use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
-    <header
-      className={`${
-        isScrolled ? "absolute top-0" : "relative"
-      } w-full z-30 flex justify-between py-2 px-7 bg-green3 transition-all duration-300`}
-    >
+    <header className="fixed h-20 w-full z-30 flex justify-between p-7 bg-green3 transition-all duration-300 overflow-hidden">
       <div
         className="flex items-center w-56"
         data-aos="zoom-out"
@@ -31,16 +13,28 @@ export default function Header() {
         </Link>
       </div>
       <nav
-        className="flex space-x-14 text-2xl items-center text-white font-bold"
+        className="flex space-x-14 text-2xl items-center text-white font-bold "
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
-        <Link href="#investment">O inwestycji</Link>
-        <Link href="#localization">Lokalizacja</Link>
-        <Link href="#profits">Profity</Link>
-        <Link href="#houses">Domy</Link>
-        <Link href="#gallery">Galeria</Link>
-        <Link href="#contact">Kontakt</Link>
+        <Link href="#investment" className="hover:text-black">
+          O inwestycji
+        </Link>
+        <Link href="#localization" className="hover:text-black">
+          Lokalizacja
+        </Link>
+        <Link href="#profits" className="hover:text-black">
+          Profity
+        </Link>
+        <Link href="#houses" className="hover:text-black">
+          Domy
+        </Link>
+        <Link href="#gallery" className="hover:text-black">
+          Galeria
+        </Link>
+        <Link href="#contact" className="hover:text-black">
+          Kontakt
+        </Link>
       </nav>
     </header>
   );
