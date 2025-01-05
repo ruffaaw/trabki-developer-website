@@ -19,7 +19,7 @@ export default function Header() {
     <header
       className={`${
         isScrolled ? "absolute top-0" : "relative"
-      } w-full z-30 flex justify-between py-2 px-7 bg-green2 transition-all duration-300`}
+      } w-full z-30 flex justify-between py-2 px-7 bg-green3 transition-all duration-300`}
     >
       <div
         className="flex items-center w-56"
