@@ -1,14 +1,12 @@
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
+import Investment from "@/components/Investment";
 export default function Home() {
   return (
-    <div className="h-screen w-full bg-green1">
-      <div className="h-full w-full overflow-hidden">
-        <div className="h-screen">
-          <Header />
-          <HomeSection />
-        </div>
-      </div>
+    <div className="h-full w-full bg-green1 overflow-hidden">
+      <Header />
+      <HomeSection />
+      <Investment />
     </div>
   );
 }
