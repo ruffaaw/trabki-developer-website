@@ -11,15 +11,15 @@ export default function HomeSection() {
         <Image
           src="/logo.png"
           alt="Logo"
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
         />
         <div className="flex flex-row space-x-10">
           <button
-            className="p-3 w-56 text-white bg-green3 hover:bg-black rounded-2xl shadow-xl"
+            className="p-3 w-56 text-white bg-green2 hover:bg-brown rounded-2xl shadow-xl"
             data-aos="zoom-in"
             data-aos-delay="900"
             data-aos-duration="1000"
@@ -27,7 +27,7 @@ export default function HomeSection() {
             Zobacz domy
           </button>
           <button
-            className="p-3 w-56 text-white bg-green3 hover:bg-black rounded-2xl shadow-xl"
+            className="p-3 w-56 text-white bg-green2 hover:bg-brown rounded-2xl shadow-xl"
             data-aos="zoom-in"
             data-aos-delay="1100"
             data-aos-duration="1000"
