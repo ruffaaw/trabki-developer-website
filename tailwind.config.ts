@@ -11,11 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        green1: "#CBF9B1",
-        green2: "#51A416",
-        green3: "#2C6B10",
-        white: "#F2F9CF",
-        black: "#212121",
+        green1: "#C4D5C5",
+        green2: "#6F8E74",
+        green3: "#A4B509",
+        brown: "#444003",
+        black: "#162607",
       },
       backgroundImage: {
         render1: "url('/render1.png')",
