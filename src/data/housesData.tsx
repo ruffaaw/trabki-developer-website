@@ -1,0 +1,86 @@
+export const housesData = [
+  {
+    id: 1,
+    name: "Dom 1",
+    details: "Dom 1 to przestronny dom z dużym ogrodem i garażem.",
+    position: { top: "51.5%", left: "7%" },
+  },
+  {
+    id: 2,
+    name: "Dom 2",
+    details: "Dom 2 oferuje nowoczesny design i świetną lokalizację.",
+    position: { top: "52%", left: "10%" },
+  },
+  {
+    id: 3,
+    name: "Dom 3",
+    details: "Dom 3 to idealne miejsce dla rodzin, z bliskością natury.",
+    position: { top: "53%", left: "16%" },
+  },
+  {
+    id: 4,
+    name: "Dom 4",
+    details: "Dom 4 posiada przestronny taras i widok na zieloną okolicę.",
+    position: { top: "54%", left: "20%" },
+  },
+  {
+    id: 5,
+    name: "Dom 5",
+    details: "Dom 5 charakteryzuje się nowoczesnym wykończeniem wnętrz.",
+    position: { top: "56%", left: "26%" },
+  },
+  {
+    id: 6,
+    name: "Dom 6",
+    details: "Dom 6 to elegancka rezydencja w spokojnej okolicy.",
+    position: { top: "57%", left: "31%" },
+  },
+  {
+    id: 7,
+    name: "Dom 7",
+    details: "Dom 7 oferuje duży ogród i dostęp do terenów rekreacyjnych.",
+    position: { top: "58%", left: "37%" },
+  },
+  {
+    id: 8,
+    name: "Dom 8",
+    details: "Dom 8 to miejsce, gdzie komfort spotyka funkcjonalność.",
+    position: { top: "59%", left: "43%" },
+  },
+  {
+    id: 9,
+    name: "Dom 9",
+    details: "Dom 9 oferuje szerokie możliwości adaptacji wnętrz.",
+    position: { top: "60%", left: "50%" },
+  },
+  {
+    id: 10,
+    name: "Dom 10",
+    details: "Dom 10 znajduje się w bliskim sąsiedztwie szkół i sklepów.",
+    position: { top: "61%", left: "56%" },
+  },
+  {
+    id: 11,
+    name: "Dom 11",
+    details: "Dom 11 wyróżnia się nowoczesną architekturą.",
+    position: { top: "63%", left: "65%" },
+  },
+  {
+    id: 12,
+    name: "Dom 12",
+    details: "Dom 12 posiada przestronne pokoje i dużą ilość światła.",
+    position: { top: "64%", left: "71%" },
+  },
+  {
+    id: 13,
+    name: "Dom 13",
+    details: "Dom 13 oferuje wygodę mieszkania w spokojnym otoczeniu.",
+    position: { top: "66%", left: "82%" },
+  },
+  {
+    id: 14,
+    name: "Dom 14",
+    details: "Dom 14 to doskonałe miejsce na inwestycję i rodzinne życie.",
+    position: { top: "67%", left: "89%" },
+  },
+];
