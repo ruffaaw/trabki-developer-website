@@ -6,8 +6,9 @@ export default function Localization() {
     >
       <div>
         <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-green2">
-          O INWESTYCJI
+          LOKALIZACJA
         </p>
+        {/* TODO */}
       </div>
     </section>
   );
