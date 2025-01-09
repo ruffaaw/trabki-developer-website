@@ -17,12 +17,17 @@ export default function Profits() {
           alt="Render 3"
           className="object-cover opacity-60"
           fill
+          data-aos="zoom-out"
+          data-aos-duration="1000"
         />
         <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
           {benefits.map((benefit, index) => (
             <div
               key={index}
               className="flex flex-col items-center text-center p-6 bg-white bg-opacity-80 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={benefit.delay}
             >
               <p className="w-14 h-14 mb-4">{benefit.icon}</p>
               <h3 className="text-3xl font-bold text-brown mb-3">
