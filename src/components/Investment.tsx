@@ -67,9 +67,11 @@ export default function Investment() {
               <strong>kulturalną i sportową</strong>, co czyni je idealnym
               miejscem do zamieszkania dla rodzin i osób aktywnych. Warto
               wspomnieć o bliskości{" "}
-              <strong>Centrum Edukacyjno-Rekreacyjnego "Solne Miasto"</strong>,
-              które oferuje szeroką gamę atrakcji sportowych i rekreacyjnych, w
-              tym basen, siłownię, saunę oraz korty tenisowe. To doskonałe
+              <strong>
+                Centrum Edukacyjno-Rekreacyjnego &quot;Solne Miasto&quot;
+              </strong>
+              , które oferuje szeroką gamę atrakcji sportowych i rekreacyjnych,
+              w tym basen, siłownię, saunę oraz korty tenisowe. To doskonałe
               miejsce na aktywne spędzanie czasu i rozwijanie pasji sportowych.
               Krzyszkowice to miejsce, gdzie możesz cieszyć się{" "}
               <strong>spokojem i komfortem</strong>, nie rezygnując z aktywnego

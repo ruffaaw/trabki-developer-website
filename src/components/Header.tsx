@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -9,9 +10,11 @@ export default function Header() {
         data-aos-duration="1000"
       >
         <Link href="#home">
-          <img
+          <Image
             src="/logo.png"
             alt="Logo"
+            width={64}
+            height={64}
             className="h-16 w-16 mr-2 drop-shadow-sm"
           />
         </Link>
