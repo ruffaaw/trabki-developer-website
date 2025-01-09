@@ -13,7 +13,11 @@ export default function Investment() {
       </div>
       <div className="flex flex-col px-32 w-full pt-4">
         <div className="flex flex-row justify-between items-center pb-8">
-          <div className="p-4 text-black">
+          <div
+            className="p-4 text-black"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <h2 className="text-3xl font-bold mb-5">
               Idealne miejsce dla Ciebie
             </h2>
@@ -36,6 +40,8 @@ export default function Investment() {
             width={950}
             height={600}
             className="shadow-2xl"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           />
         </div>
         <div className="flex flex-row justify-between items-center pb-8">
@@ -45,8 +51,14 @@ export default function Investment() {
             width={950}
             height={600}
             className="shadow-2xl"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           />
-          <div className="p-4 text-black">
+          <div
+            className="p-4 text-black"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <h2 className="text-3xl font-bold mb-5 ">
               Zdrowe, przyjazne otoczenie
             </h2>
