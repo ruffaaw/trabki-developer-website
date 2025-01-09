@@ -9,7 +9,11 @@ export default function Header() {
         data-aos-duration="1000"
       >
         <Link href="#home">
-          <img src="/logo.png" alt="Logo" className="h-16 w-16 mr-2" />
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-16 w-16 mr-2 drop-shadow-sm"
+          />
         </Link>
       </div>
       <nav
@@ -17,22 +21,22 @@ export default function Header() {
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
-        <Link href="#investment" className="hover:text-brown">
+        <Link href="#investment" className="hover:text-black drop-shadow-md">
           O inwestycji
         </Link>
-        <Link href="#localization" className="hover:text-brown">
+        <Link href="#localization" className="hover:text-black drop-shadow-md">
           Lokalizacja
         </Link>
-        <Link href="#profits" className="hover:text-brown">
+        <Link href="#profits" className="hover:text-black drop-shadow-md">
           Profity
         </Link>
-        <Link href="#houses" className="hover:text-brown">
+        <Link href="#houses" className="hover:text-black drop-shadow-md">
           Domy
         </Link>
-        <Link href="#gallery" className="hover:text-brown">
+        <Link href="#gallery" className="hover:text-black drop-shadow-md">
           Galeria
         </Link>
-        <Link href="#contact" className="hover:text-brown">
+        <Link href="#contact" className="hover:text-black drop-shadow-md">
           Kontakt
         </Link>
       </nav>
