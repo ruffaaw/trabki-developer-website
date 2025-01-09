@@ -18,7 +18,7 @@ export default function Investment() {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h2 className="text-3xl font-bold mb-5">
+            <h2 className="text-3xl font-bold mb-5 text-brown">
               Idealne miejsce dla Ciebie
             </h2>
             <p className="text-xl text-justify">
@@ -59,7 +59,7 @@ export default function Investment() {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h2 className="text-3xl font-bold mb-5 ">
+            <h2 className="text-3xl font-bold mb-5 text-brown">
               Zdrowe, przyjazne otoczenie
             </h2>
             <p className="text-xl text-justify">
