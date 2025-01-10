@@ -38,7 +38,7 @@ export default function Gallery() {
           className="w-full"
         >
           {galleryImages.map((src, index) => (
-            <SwiperSlide key={index} className="flex justify-center">
+            <SwiperSlide key={index} className="flex justify-center rounded-lg">
               <Image
                 src={src}
                 alt={`Galeria ${index + 1}`}
