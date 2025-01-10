@@ -28,6 +28,7 @@ export default function Profits() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={benefit.delay}
+              data-aos-easing="linear"
             >
               <p className="w-14 h-14 mb-4">{benefit.icon}</p>
               <h3 className="text-3xl font-bold text-brown mb-3">
