@@ -43,7 +43,7 @@ export default function Gallery() {
                 src={src}
                 alt={`Galeria ${index + 1}`}
                 width={1200}
-                height={800}
+                height={500}
                 className="rounded-lg shadow-lg object-cover"
               />
             </SwiperSlide>
