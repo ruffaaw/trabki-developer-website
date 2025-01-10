@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <Profits />
       <Houses />
       <Gallery />
+      <Contact />
     </div>
   );
 }
