@@ -17,7 +17,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="w-full h-full flex flex-col items-center bg-green1 relative scroll-mt-20 "
+      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-10 "
     >
       <div
         className="w-full lg:w-9/12 pt-20"

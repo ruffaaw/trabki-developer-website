@@ -4,21 +4,21 @@ export default function Investment() {
   return (
     <section
       id="investment"
-      className="w-full h-full flex flex-col items-center bg-green1 relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
     >
       <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-green2">
+        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2">
           O INWESTYCJI
         </p>
       </div>
       <div className="flex flex-col px-32 w-full pt-4">
         <div className="flex flex-row justify-between items-center pb-8">
           <div
-            className="p-4 text-black"
+            className="p-4 text-color3"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h2 className="text-3xl font-bold mb-5 text-brown">
+            <h2 className="text-3xl font-bold mb-5">
               Idealne miejsce dla Ciebie
             </h2>
             <p className="text-xl text-justify">
@@ -55,11 +55,11 @@ export default function Investment() {
             data-aos-duration="1000"
           />
           <div
-            className="p-4 text-black"
+            className="p-4 text-color3"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h2 className="text-3xl font-bold mb-5 text-brown">
+            <h2 className="text-3xl font-bold mb-5">
               Zdrowe, przyjazne otoczenie
             </h2>
             <p className="text-xl text-justify">

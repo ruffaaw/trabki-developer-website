@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="fixed h-20 w-full z-30 flex justify-between p-7 bg-green2 transition-all duration-300 overflow-hidden">
+    <header className="fixed h-20 w-full z-30 flex justify-between p-7 bg-color2 transition-all duration-300 overflow-hidden">
       <div
         className="flex items-center w-56"
         data-aos="zoom-out"
@@ -24,22 +24,22 @@ export default function Header() {
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
-        <Link href="#investment" className="hover:text-black drop-shadow-md">
+        <Link href="#investment" className="hover:text-color1 drop-shadow-md">
           O inwestycji
         </Link>
-        <Link href="#localization" className="hover:text-black drop-shadow-md">
+        <Link href="#localization" className="hover:text-color1 drop-shadow-md">
           Lokalizacja
         </Link>
-        <Link href="#profits" className="hover:text-black drop-shadow-md">
+        <Link href="#profits" className="hover:text-color1 drop-shadow-md">
           Profity
         </Link>
-        <Link href="#houses" className="hover:text-black drop-shadow-md">
+        <Link href="#houses" className="hover:text-color1 drop-shadow-md">
           Domy
         </Link>
-        <Link href="#gallery" className="hover:text-black drop-shadow-md">
+        <Link href="#gallery" className="hover:text-color1 drop-shadow-md">
           Galeria
         </Link>
-        <Link href="#contact" className="hover:text-black drop-shadow-md">
+        <Link href="#contact" className="hover:text-color1 drop-shadow-md">
           Kontakt
         </Link>
       </nav>

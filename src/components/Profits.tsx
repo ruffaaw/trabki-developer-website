@@ -4,10 +4,10 @@ export default function Profits() {
   return (
     <section
       id="profits"
-      className="w-full h-full flex flex-col items-center bg-green1 relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
     >
       <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl pt-10 font-bold text-center break-words max-w-full text-green2">
+        <p className="text-3xl sm:text-4xl lg:text-6xl pt-10 font-bold text-center break-words max-w-full text-color2">
           PROFITY
         </p>
       </div>
@@ -31,10 +31,10 @@ export default function Profits() {
               data-aos-easing="linear"
             >
               <p className="w-14 h-14 mb-4">{benefit.icon}</p>
-              <h3 className="text-3xl font-bold text-brown mb-3">
+              <h3 className="text-3xl font-bold text-color2 mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-xl text-black">{benefit.description}</p>
+              <p className="text-xl text-color3">{benefit.description}</p>
             </div>
           ))}
         </div>

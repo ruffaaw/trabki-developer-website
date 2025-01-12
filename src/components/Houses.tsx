@@ -16,10 +16,10 @@ export default function Houses() {
   return (
     <section
       id="houses"
-      className="w-full h-full flex flex-col items-center bg-green1 relative scroll-mt-20 "
+      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20 "
     >
       <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-green2">
+        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2">
           DOMY
         </p>
       </div>
@@ -46,7 +46,7 @@ export default function Houses() {
                 left: house.position.left,
                 transform: "translate(-50%, -50%)",
               }}
-              className="bg-brown text-white rounded-full w-6 h-6 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform"
+              className="bg-color2 text-white rounded-full w-6 h-6 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform"
               onClick={() => setSelectedHouse(house)}
             >
               {house.id}
@@ -61,12 +61,12 @@ export default function Houses() {
         >
           {selectedHouse ? (
             <>
-              <h2 className="text-2xl font-bold text-brown mb-4">
+              <h2 className="text-2xl font-bold text-color2 mb-4">
                 {selectedHouse.name}
               </h2>
-              <p className="text-black text-lg">{selectedHouse.details}</p>
+              <p className="text-color3 text-lg">{selectedHouse.details}</p>
               <button
-                className="mt-4 px-4 py-2 bg-green2 text-white rounded-lg hover:bg-black transition"
+                className="mt-4 px-4 py-2 bg-color2 text-white rounded-lg hover:bg-color4 transition"
                 onClick={() => setSelectedHouse(null)}
               >
                 Zamknij

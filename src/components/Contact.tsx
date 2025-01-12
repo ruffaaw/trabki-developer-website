@@ -97,7 +97,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full flex flex-col items-center bg-grey relative scroll-mt-20 py-10 px-4"
+      className="w-full flex flex-col items-center bg-color5 relative scroll-mt-20 py-10 px-4"
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
@@ -215,7 +215,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-auto w-full py-3 bg-green2 text-white text-lg rounded-md shadow-md hover:bg-green4 transition duration-300"
+                className="mt-auto w-full py-3 bg-color4 text-white text-lg rounded-md shadow-md hover:bg-green4 transition duration-300"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Wysyłanie..." : "Wyślij"}

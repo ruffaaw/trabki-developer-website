@@ -9,7 +9,7 @@ import Localization from "@/components/Localization";
 import Profits from "@/components/Profits";
 export default function Home() {
   return (
-    <div className="h-full w-full bg-green1 overflow-hidden">
+    <div className="h-full w-full bg-white overflow-hidden">
       <Header />
       <HomeSection />
       <Investment />
