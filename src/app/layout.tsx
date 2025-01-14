@@ -12,7 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 500,
+      easing: "ease-in-out",
+    });
   }, []);
 
   return (
