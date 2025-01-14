@@ -6,7 +6,7 @@ import HomeSection from "@/components/HomeSection";
 import Houses from "@/components/Houses";
 import AboutInvestment from "@/components/AboutInvestment";
 import AboutUs from "@/components/AboutUs";
-import Profits from "@/components/Profits";
+import OurValues from "@/components/OurValues";
 export default function Home() {
   return (
     <div className="h-full w-full bg-white overflow-hidden">
@@ -14,7 +14,7 @@ export default function Home() {
       <HomeSection />
       <AboutInvestment />
       <AboutUs />
-      <Profits />
+      <OurValues />
       <Houses />
       <Gallery />
       <Contact />
