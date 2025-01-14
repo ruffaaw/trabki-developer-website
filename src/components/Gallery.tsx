@@ -11,6 +11,7 @@ const galleryImages = [
   "/render2.png",
   "/render3.png",
   "/render4.png",
+  "/zGory1.png",
 ];
 
 export default function Gallery() {
