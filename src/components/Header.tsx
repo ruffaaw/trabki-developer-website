@@ -1,11 +1,15 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="fixed h-20 w-full z-30 flex justify-between p-7 bg-color2 transition-all duration-300 overflow-hidden">
+    <header className="fixed h-20 w-full z-30 flex justify-between items-center bg-color2 transition-all duration-300 shadow-md">
       <div
-        className="flex items-center w-56"
+        className="flex items-center w-56 p-7"
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
@@ -20,29 +24,94 @@ export default function Header() {
         </Link>
       </div>
       <nav
-        className="flex space-x-14 text-2xl items-center text-white font-bold "
+        className="hidden md:flex space-x-8 lg:space-x-12 text-lg lg:text-xl items-center text-white font-bold pr-7"
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
-        <Link href="#investment" className="hover:text-color1 drop-shadow-md">
-          O inwestycji
-        </Link>
-        <Link href="#localization" className="hover:text-color1 drop-shadow-md">
-          Lokalizacja
-        </Link>
-        <Link href="#profits" className="hover:text-color1 drop-shadow-md">
-          Profity
-        </Link>
-        <Link href="#houses" className="hover:text-color1 drop-shadow-md">
-          Domy
-        </Link>
-        <Link href="#gallery" className="hover:text-color1 drop-shadow-md">
-          Galeria
-        </Link>
-        <Link href="#contact" className="hover:text-color1 drop-shadow-md">
-          Kontakt
-        </Link>
+        {[
+          { href: "#about-investment", label: "O inwestycji" },
+          { href: "#about-us", label: "O nas" },
+          { href: "#profits", label: "Profity" },
+          { href: "#houses", label: "Domy" },
+          { href: "#gallery", label: "Galeria" },
+          { href: "#contact", label: "Kontakt" },
+        ].map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="hover:text-color1 hover:scale-125 transition-all drop-shadow-md"
+          >
+            {item.label}
+          </Link>
+        ))}
       </nav>
+      <button
+        className="md:hidden flex items-center text-white pr-4 py-7"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      {isMenuOpen && (
+        <div className="fixed flex flex-col items-center top-20 pt-4 bg-color2 shadow-md z-30 w-screen h-auto ">
+          <Link
+            href="#about-investment"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 "
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">O inwestycji</p>
+          </Link>
+          <Link
+            href="#about-us"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 "
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">O nas</p>
+          </Link>
+          <Link
+            href="#profits"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">Profity</p>
+          </Link>
+          <Link
+            href="#houses"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">Domy</p>
+          </Link>
+          <Link
+            href="#gallery"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">Galeria</p>
+          </Link>
+          <Link
+            href="#contact"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">Kontakt</p>
+          </Link>
+        </div>
+      )}
     </header>
   );
 }
