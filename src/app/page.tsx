@@ -4,16 +4,16 @@ import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
 import Houses from "@/components/Houses";
-import Investment from "@/components/Investment";
-import Localization from "@/components/Localization";
+import AboutInvestment from "@/components/AboutInvestment";
+import AboutUs from "@/components/AboutUs";
 import Profits from "@/components/Profits";
 export default function Home() {
   return (
     <div className="h-full w-full bg-white overflow-hidden">
       <Header />
       <HomeSection />
-      <Investment />
-      <Localization />
+      <AboutInvestment />
+      <AboutUs />
       <Profits />
       <Houses />
       <Gallery />
