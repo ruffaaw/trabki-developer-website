@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { benefits } from "@/data/profitsData";
 
-export default function Profits() {
+export default function OutValues() {
   return (
     <section
-      id="profits"
+      id="our-values"
       className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
     >
       <div>

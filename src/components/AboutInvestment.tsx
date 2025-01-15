@@ -52,7 +52,7 @@ export default function AboutInvestment() {
             width={950}
             height={600}
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="1000"
           />
 

@@ -31,7 +31,7 @@ export default function Header() {
         {[
           { href: "#about-investment", label: "O inwestycji" },
           { href: "#about-us", label: "O nas" },
-          { href: "#profits", label: "Profity" },
+          { href: "#our-values", label: "Nasze wartości" },
           { href: "#houses", label: "Domy" },
           { href: "#gallery", label: "Galeria" },
           { href: "#contact", label: "Kontakt" },
@@ -83,11 +83,11 @@ export default function Header() {
             <p className="break-words max-w-full">O nas</p>
           </Link>
           <Link
-            href="#profits"
+            href="#our-values"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            <p className="break-words max-w-full">Profity</p>
+            <p className="break-words max-w-full">Nasze wartości</p>
           </Link>
           <Link
             href="#houses"
