@@ -31,7 +31,6 @@ export default function OutValues() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay={benefit.delay}
-                data-aos-easing="linear"
               >
                 <p className="w-14 h-14 mb-4">{benefit.icon}</p>
                 <h3 className="text-2xl xl:text-3xl font-bold text-color2 mb-3">
@@ -53,7 +52,6 @@ export default function OutValues() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={benefit.delay}
-              data-aos-easing="linear"
             >
               <p className="w-14 h-14 mb-4">{benefit.icon}</p>
               <h3 className="text-xl sm:text-2xl font-bold text-color2 mb-3">
