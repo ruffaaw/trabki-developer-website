@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 export default function AboutInvestment() {
@@ -6,7 +7,6 @@ export default function AboutInvestment() {
       id="about-investment"
       className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
     >
-      {/* Nagłówek */}
       <div>
         <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2">
           O INWESTYCJI
@@ -14,7 +14,6 @@ export default function AboutInvestment() {
       </div>
 
       <div className="flex flex-col px-6 w-full pt-4">
-        {/* Sekcja 1 */}
         <div className="flex flex-col lg:flex-row justify-between items-center pb-8">
           <div
             className="p-4 text-color3"
@@ -44,11 +43,10 @@ export default function AboutInvestment() {
           />
         </div>
 
-        {/* Sekcja 2 */}
         <div className="flex flex-col lg:flex-row justify-between items-center pb-8">
           <Image
-            src="/render2.png"
-            alt="Render 2"
+            src="/zGory1.png"
+            alt="Render z góry"
             width={950}
             height={600}
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
@@ -71,12 +69,12 @@ export default function AboutInvestment() {
             <div className="flex justify-center">
               <button
                 className="bg-color3 text-color5 px-6 py-3 rounded-md hover:bg-color2 hover:scale-110 transition drop-shadow-md"
-                // onClick={() =>
-                //   window.open(
-                //     "https://maps.app.goo.gl/KssHA4FVSg5khjQi8",
-                //     "_blank"
-                //   )
-                // }
+                onClick={() =>
+                  window.open(
+                    "https://maps.app.goo.gl/KssHA4FVSg5khjQi8",
+                    "_blank"
+                  )
+                }
               >
                 Zobacz na mapie
               </button>
@@ -84,7 +82,6 @@ export default function AboutInvestment() {
           </div>
         </div>
 
-        {/* Sekcja 3 */}
         <div className="flex flex-col lg:flex-row justify-between items-center pb-8">
           <div
             className="p-4 text-color3"
@@ -136,7 +133,6 @@ export default function AboutInvestment() {
           />
         </div>
 
-        {/* Sekcja 4 */}
         <div className="flex flex-col lg:flex-row justify-between items-center pb-8">
           <Image
             src="/render3.png"

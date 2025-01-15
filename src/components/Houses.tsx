@@ -84,7 +84,7 @@ export default function Houses() {
                   left: house.position.left,
                   transform: "translate(-50%, -50%)",
                 }}
-                className="bg-color2 text-white rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-sm lg:text-base"
+                className="bg-color2 text-white rounded-full w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-xs md:text-sm lg:text-base"
                 onClick={() => setSelectedHouse(house)}
               >
                 {house.numer}
