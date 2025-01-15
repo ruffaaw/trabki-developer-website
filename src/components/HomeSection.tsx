@@ -12,12 +12,22 @@ export default function HomeSection() {
         <Image
           src="/logo.png"
           alt="Logo"
-          width={250}
-          height={250}
+          width={200}
+          height={200}
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
-          className=" drop-shadow-md"
+          className="md:hidden drop-shadow-md"
+        />
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          width={300}
+          height={300}
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          className="max-md:hidden drop-shadow-md"
         />
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link

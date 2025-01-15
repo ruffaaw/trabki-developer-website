@@ -97,7 +97,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-full flex flex-col items-center bg-color5 relative scroll-mt-20 py-10 px-4"
+      className="w-full flex flex-col items-center bg-color5 relative scroll-mt-10 py-10 px-4"
     >
       <div className="max-w-screen-xl w-full text-center">
         <div>
