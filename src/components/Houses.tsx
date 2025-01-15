@@ -37,7 +37,7 @@ export default function Houses() {
         </p>
       </div>
 
-      <div className="max-md:hidden mt-6 flex">
+      <div className="mt-6 flex">
         <button
           onClick={() => handleViewChange("map")}
           className={`px-6 py-2 rounded-s-md transition-all duration-300 ${
@@ -63,7 +63,7 @@ export default function Houses() {
       <div className="flex flex-col lg:flex-row items-start justify-center w-full mt-10 px-6 lg:px-16 gap-6 lg:gap-10">
         {viewMode === "map" && (
           <div
-            className="max-md:hidden relative w-full lg:w-2/3"
+            className="relative w-full lg:w-2/3"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -84,7 +84,7 @@ export default function Houses() {
                   left: house.position.left,
                   transform: "translate(-50%, -50%)",
                 }}
-                className="bg-color2 text-white rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-base"
+                className="bg-color2 text-white rounded-full w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-sm lg:text-base"
                 onClick={() => setSelectedHouse(house)}
               >
                 {house.numer}
@@ -129,40 +129,6 @@ export default function Houses() {
             </div>
           </div>
         )}
-        <div
-          className="md:hidden w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h2 className="text-2xl font-extrabold text-color3 mb-4">
-            Lista domów
-          </h2>
-          <div className="max-h-[600px] overflow-y-auto space-y-4">
-            <ul>
-              {housesData.map((house) => (
-                <li
-                  key={house.id}
-                  className="cursor-pointer hover:bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 transition-transform "
-                  onClick={() => setSelectedHouse(house)}
-                >
-                  <h3 className="text-xl font-bold text-gray-800">
-                    Dom {house.numer}
-                  </h3>
-                  <p className="text-color3">
-                    <span className="font-semibold">Metraż:</span>{" "}
-                    {house.metraz} m²,{" "}
-                    <span className="font-semibold">Pokoje:</span>{" "}
-                    {house.pokoje}
-                  </p>
-                  <p className="text-color3">
-                    <span className="font-semibold">Cena:</span>{" "}
-                    {house.cena.toLocaleString()} zł
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
 
         <div
           className=" w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg"

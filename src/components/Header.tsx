@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="fixed h-20 w-full z-30 flex justify-between items-center bg-color2 transition-all duration-300 shadow-md">
       <div
-        className="flex items-center w-56 p-7"
+        className="flex items-center p-7"
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
@@ -24,7 +24,7 @@ export default function Header() {
         </Link>
       </div>
       <nav
-        className="hidden md:flex space-x-8 lg:space-x-12 text-lg lg:text-xl items-center text-white font-bold pr-7"
+        className="hidden md:flex space-x-8 lg:space-x-12 text-lg lg:text-xl items-center justify-center text-white font-bold pr-7"
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
