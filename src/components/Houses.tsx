@@ -146,6 +146,7 @@ export default function Houses() {
             <Image
               src="/zGory1.png"
               alt="Mapa domów"
+              layout="responsive"
               width={1200}
               height={800}
               className="rounded-lg shadow-lg object-cover"
