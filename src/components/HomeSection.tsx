@@ -12,8 +12,8 @@ export default function HomeSection() {
         <Image
           src="/logo.png"
           alt="Logo"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"

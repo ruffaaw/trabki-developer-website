@@ -28,6 +28,7 @@ export default function Houses() {
   return (
     <section
       id="houses"
+      rel="noopener noreferrer"
       className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
     >
       <div>
@@ -36,7 +37,7 @@ export default function Houses() {
         </p>
       </div>
 
-      <div className="mt-6 flex">
+      <div className="max-md:hidden mt-6 flex">
         <button
           onClick={() => handleViewChange("map")}
           className={`px-6 py-2 rounded-s-md transition-all duration-300 ${
@@ -60,86 +61,9 @@ export default function Houses() {
       </div>
 
       <div className="flex flex-col lg:flex-row items-start justify-center w-full mt-10 px-6 lg:px-16 gap-6 lg:gap-10">
-        <div
-          className="lg:hidden w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          {selectedHouse ? (
-            <>
-              <h2 className="text-2xl font-extrabold text-color3 mb-4">
-                Dom {selectedHouse.numer}
-              </h2>
-              <div className="space-y-4">
-                <div className="flex flex-row text-lg font-semibold text-color3 items-center">
-                  <span>Status: </span>
-                  <span
-                    className={`ml-1 ${
-                      selectedHouse.status === "Dostępny"
-                        ? "text-green-600"
-                        : selectedHouse.status === "Zarezerwowany"
-                        ? "text-yellow-500"
-                        : selectedHouse.status === "Sprzedany"
-                        ? "text-red-600"
-                        : "text-gray-500"
-                    }`}
-                  >
-                    {selectedHouse.status}
-                  </span>
-                </div>
-
-                <p className="text-color3">
-                  <span className="font-semibold">Metraż:</span>{" "}
-                  {selectedHouse.metraz} m²
-                </p>
-                <p className="text-color3">
-                  <span className="font-semibold">Pokoje:</span>{" "}
-                  {selectedHouse.pokoje}
-                </p>
-                <p className="text-color3">
-                  <span className="font-semibold">Cena:</span>{" "}
-                  {selectedHouse.cena.toLocaleString()} zł
-                </p>
-                <p className="text-color3">
-                  <span className="font-semibold">Poziom:</span>{" "}
-                  {selectedHouse.poziom}
-                </p>
-                <p className="text-color3">
-                  <span className="font-semibold">Ogródek:</span>{" "}
-                  {selectedHouse.ogrodek} m²
-                </p>
-
-                <div className="mt-4">
-                  <a
-                    href={selectedHouse.linkDoOferty}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-4 py-2 bg-color4 text-color5 font-medium text-center rounded-lg hover:bg-color1 hover:text-color3 hover:scale-110 transition-all shadow-md"
-                  >
-                    Zobacz szczegóły oferty
-                  </a>
-                </div>
-              </div>
-
-              <button
-                className="mt-6 block px-4 py-2 bg-color3 text-color5 font-medium text-center rounded-lg hover:bg-color2 hover:scale-110 transition-all shadow-md w-full"
-                onClick={() => setSelectedHouse(null)}
-              >
-                Zamknij
-              </button>
-            </>
-          ) : (
-            <p className="text-gray-500 text-lg">
-              {viewMode === "map"
-                ? "Kliknij na numer domu, aby zobaczyć szczegóły."
-                : "Wybierz dom z listy, aby zobaczyć szczegóły."}
-            </p>
-          )}
-        </div>
-
         {viewMode === "map" && (
           <div
-            className="relative w-full lg:w-2/3"
+            className="max-md:hidden relative w-full lg:w-2/3"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -205,9 +129,43 @@ export default function Houses() {
             </div>
           </div>
         )}
+        <div
+          className="md:hidden w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2 className="text-2xl font-extrabold text-color3 mb-4">
+            Lista domów
+          </h2>
+          <div className="max-h-[600px] overflow-y-auto space-y-4">
+            <ul>
+              {housesData.map((house) => (
+                <li
+                  key={house.id}
+                  className="cursor-pointer hover:bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 transition-transform "
+                  onClick={() => setSelectedHouse(house)}
+                >
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Dom {house.numer}
+                  </h3>
+                  <p className="text-color3">
+                    <span className="font-semibold">Metraż:</span>{" "}
+                    {house.metraz} m²,{" "}
+                    <span className="font-semibold">Pokoje:</span>{" "}
+                    {house.pokoje}
+                  </p>
+                  <p className="text-color3">
+                    <span className="font-semibold">Cena:</span>{" "}
+                    {house.cena.toLocaleString()} zł
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
         <div
-          className="max-lg:hidden w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg"
+          className=" w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
