@@ -9,7 +9,7 @@ export default function HomeSection() {
         data-aos="fade-in"
         data-aos-duration="2000"
       >
-        <Image
+        {/* <Image
           src="/logo.png"
           alt="Logo"
           width={150}
@@ -28,7 +28,7 @@ export default function HomeSection() {
           data-aos-delay="500"
           data-aos-duration="1000"
           className="max-md:hidden drop-shadow-md"
-        />
+        /> */}
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link
             className="py-3 w-56 max-md:w-3/5  text-color5 rounded-2xl bg-color3 hover:bg-color2 hover:text-white transition break-words max-w-full text-center drop-shadow-xl"

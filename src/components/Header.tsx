@@ -14,13 +14,13 @@ export default function Header() {
         data-aos-duration="1000"
       >
         <Link href="#home">
-          <Image
+          {/* <Image
             src="/logo.png"
             alt="Logo"
             width={64}
             height={64}
             className="h-16 w-16 mr-2 drop-shadow-sm"
-          />
+          /> */}
         </Link>
       </div>
       <nav
