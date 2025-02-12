@@ -1,29 +1,73 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { housesData } from "@/data/housesData";
+import { houseCoordinates } from "@/data/houseCoordinates";
 
 type House = {
-  id: number;
+  id: string;
   numer: string;
-  status: string;
-  linkDoOferty: string;
+  status: number;
+  pdf: string;
   metraz: number;
   pokoje: number;
   cena: number;
-  poziom: string;
-  ogrodek: number;
-  position: { top: string; left: string };
+  dzialka: number;
 };
 
 export default function Houses() {
   const [selectedHouse, setSelectedHouse] = useState<House | null>(null);
   const [viewMode, setViewMode] = useState<"map" | "list">("map");
+  const [houseOffers, setHouseOffers] = useState<any[]>([]);
 
   const handleViewChange = (p0: string) => {
     setViewMode(viewMode === "map" ? "list" : "map");
     setSelectedHouse(null);
   };
+
+  const getStatusText = (status: number) => {
+    switch (status) {
+      case 0:
+        return "Niedostępny";
+      case 1:
+        return "Dostępny";
+      case 2:
+        return "Zarezerwowany";
+      default:
+        return "Nieznany";
+    }
+  };
+
+  useEffect(() => {
+    const fetchHouseOffers = async () => {
+      try {
+        const response = await fetch(
+          "https://qt4abnihhd.execute-api.eu-central-1.amazonaws.com/prd/get-items"
+        );
+        const data = await response.json();
+        const sortedData = data.body.sort((a: any, b: any) => {
+          const numA = parseInt(a.Id.replace("dom", ""), 10);
+          const numB = parseInt(b.Id.replace("dom", ""), 10);
+          return numA - numB;
+        });
+        const combinedData = sortedData.map((house: any) => {
+          const coords = houseCoordinates.find(
+            (coord) => coord.numer === house.Id
+          );
+          return {
+            ...house,
+            top: coords?.top || 0,
+            left: coords?.left || 0,
+          };
+        });
+
+        setHouseOffers(combinedData);
+      } catch (error) {
+        alert("Błąd podczas pobierania danych");
+        console.log("Błąd podczas pobierania danych: ", error);
+      }
+    };
+    fetchHouseOffers();
+  }, []);
 
   return (
     <section
@@ -37,7 +81,7 @@ export default function Houses() {
         </p>
       </div>
 
-      <div className="mt-6 flex">
+      <div className="mt-6 flex" data-aos="zoom-in" data-aos-duration="1000">
         <button
           onClick={() => handleViewChange("map")}
           className={`px-6 py-2 rounded-s-md transition-all duration-300 ${
@@ -75,16 +119,22 @@ export default function Houses() {
               height={800}
               className="rounded-lg shadow-lg object-cover"
             />
-            {housesData.map((house) => (
+            {houseOffers.map((house) => (
               <button
-                key={house.id}
+                key={house.Id}
                 style={{
                   position: "absolute",
-                  top: house.position.top,
-                  left: house.position.left,
+                  top: house.top,
+                  left: house.left,
                   transform: "translate(-50%, -50%)",
                 }}
-                className="bg-color2 text-white rounded-full w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-xs md:text-sm lg:text-base"
+                className={`${
+                  house.status === 0
+                    ? "bg-red-500"
+                    : house.status === 1
+                    ? "bg-green-500"
+                    : "bg-yellow-500"
+                } text-white rounded-full w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-xs md:text-sm lg:text-base`}
                 onClick={() => setSelectedHouse(house)}
               >
                 {house.numer}
@@ -104,9 +154,9 @@ export default function Houses() {
             </h2>
             <div className="max-h-[600px] overflow-y-auto space-y-4">
               <ul>
-                {housesData.map((house) => (
+                {houseOffers.map((house) => (
                   <li
-                    key={house.id}
+                    key={house.Id}
                     className="cursor-pointer hover:bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 transition-transform "
                     onClick={() => setSelectedHouse(house)}
                   >
@@ -142,19 +192,17 @@ export default function Houses() {
               </h2>
               <div className="space-y-4">
                 <div className="flex flex-row text-lg font-semibold text-color3 items-center">
-                  <span>Status: </span>
+                  <span>Status:&nbsp;</span>
                   <span
-                    className={`ml-1 ${
-                      selectedHouse.status === "Dostępny"
-                        ? "text-green-600"
-                        : selectedHouse.status === "Zarezerwowany"
-                        ? "text-yellow-500"
-                        : selectedHouse.status === "Sprzedany"
-                        ? "text-red-600"
-                        : "text-gray-500"
-                    }`}
+                    className={`${
+                      selectedHouse.status === 0
+                        ? "text-red-500"
+                        : selectedHouse.status === 1
+                        ? "text-green-500"
+                        : "text-yellow-500"
+                    } font-semibold`}
                   >
-                    {selectedHouse.status}
+                    {getStatusText(selectedHouse.status)}
                   </span>
                 </div>
 
@@ -171,20 +219,16 @@ export default function Houses() {
                   {selectedHouse.cena.toLocaleString()} zł
                 </p>
                 <p className="text-color3">
-                  <span className="font-semibold">Poziom:</span>{" "}
-                  {selectedHouse.poziom}
-                </p>
-                <p className="text-color3">
-                  <span className="font-semibold">Ogródek:</span>{" "}
-                  {selectedHouse.ogrodek} m²
+                  <span className="font-semibold">Działka:</span>{" "}
+                  {selectedHouse.dzialka} ara
                 </p>
 
                 <div className="mt-4">
                   <a
-                    href={selectedHouse.linkDoOferty}
+                    href={selectedHouse.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block px-4 py-2 bg-color4 text-color5 font-medium text-center rounded-lg hover:bg-color1 hover:text-color3 hover:scale-110 transition-all shadow-md"
+                    className="block px-4 py-2 bg-color1 text-color3 font-medium text-center rounded-lg hover:bg-color4 hover:text-color5 hover:scale-110 transition-all shadow-md"
                   >
                     Zobacz szczegóły oferty
                   </a>
