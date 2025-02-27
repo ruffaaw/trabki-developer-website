@@ -26,7 +26,7 @@ export default function HomeSection() {
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
-          className="md:hidden drop-shadow-md mb-10"
+          className="md:hidden drop-shadow-md"
           priority={true}
         />
         <Image
