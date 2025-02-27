@@ -118,6 +118,7 @@ export default function Houses() {
               width={1200}
               height={800}
               className="rounded-lg shadow-lg object-cover"
+              priority={true}
             />
             {houseOffers.map((house) => (
               <button
