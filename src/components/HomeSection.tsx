@@ -4,8 +4,17 @@ import Link from "next/link";
 export default function HomeSection() {
   return (
     <section id="home" className=" pt-20 h-screen w-full ">
+      <Image
+        src="/render1.png"
+        alt="Tło sekcji"
+        fill
+        priority
+        className="object-cover object-center"
+        data-aos="fade-in"
+        data-aos-duration="2000"
+      />
       <div
-        className="bg-render1 bg-cover bg-center h-full w-full flex flex-col justify-center items-center"
+        className="h-full w-full flex flex-col justify-center items-center"
         data-aos="fade-in"
         data-aos-duration="2000"
       >
@@ -18,6 +27,7 @@ export default function HomeSection() {
           data-aos-delay="500"
           data-aos-duration="1000"
           className="md:hidden drop-shadow-md mb-10"
+          priority={true}
         />
         <Image
           src="/logo_kwadratowe.png"
@@ -28,6 +38,7 @@ export default function HomeSection() {
           data-aos-delay="500"
           data-aos-duration="1000"
           className="max-md:hidden drop-shadow-md mb-10"
+          priority={true}
         />
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10 mt-8">
           <Link

@@ -40,6 +40,7 @@ export default function AboutInvestment() {
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-left"
             data-aos-duration="1000"
+            priority={true}
           />
         </div>
 
@@ -51,7 +52,8 @@ export default function AboutInvestment() {
             height={600}
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
-            data-aos-duration="1000"
+            data-aos-duration="1000"            
+            priority={true}
           />
 
           <div
@@ -130,6 +132,7 @@ export default function AboutInvestment() {
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-left"
             data-aos-duration="1000"
+            priority={true}
           />
         </div>
 
@@ -142,6 +145,7 @@ export default function AboutInvestment() {
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
+            priority={true}
           />
           <div
             className="p-4 text-color3"
