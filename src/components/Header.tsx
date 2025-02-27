@@ -17,9 +17,9 @@ export default function Header() {
           <Image
             src="/logo_plaskie.png"
             alt="Logo"
-            width={214}
+            width={208}
             height={64}
-            className="h-16 w-40 mr-2 drop-shadow-sm"
+            className="h-16 w-52 mr-2 drop-shadow-sm"
           />
         </Link>
       </div>
