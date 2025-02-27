@@ -21,20 +21,20 @@ export default function Footer() {
                 className="p-2"
               />
             </Link>
-            {/* <Link
+            <Link
               href="https://www.n20.pl/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2"
             >
               <Image
-                src="/logo.png"
+                src="/logo_kwadratowe.png"
                 alt="N20"
-                width={144}
+                width={212}
                 height={144}
                 className="p-2"
               />
-            </Link> */}
+            </Link>
           </div>
           <div className="flex flex-col justify-center items-center mt-5 lg:mt-0">
             <div className="flex flex-row gap-4">
