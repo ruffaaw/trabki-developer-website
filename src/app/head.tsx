@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Trąbki",
   description: "",
-  image: "/logo.png",
+  image: "/logo_kwadratowe.png",
 };
 
 export default function Head() {
