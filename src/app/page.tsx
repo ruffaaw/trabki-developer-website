@@ -9,7 +9,7 @@ import AboutUs from "@/components/AboutUs";
 import OurValues from "@/components/OurValues";
 export default function Home() {
   return (
-    <div className="h-full w-full bg-white overflow-hidden">
+    <div className="h-full w-full overflow-hidden">
       <Header />
       <HomeSection />
       <AboutInvestment />
