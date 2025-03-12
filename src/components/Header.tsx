@@ -13,7 +13,7 @@ export default function Header() {
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
-        <Link href="#home">
+        <Link href="https://master.d1fmcrp2gd0h94.amplifyapp.com/">
           <Image
             src="/logo_plaskie.png"
             alt="Logo"
