@@ -13,7 +13,13 @@ export default function Header() {
         data-aos="zoom-out"
         data-aos-duration="1000"
       >
-        <Link href="https://master.d1fmcrp2gd0h94.amplifyapp.com/">
+        <Link
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/";
+          }}
+        >
           <Image
             src="/logo_plaskie.png"
             alt="Logo"
