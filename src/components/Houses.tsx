@@ -159,7 +159,19 @@ export default function Houses() {
                   <li
                     key={house.Id}
                     className="cursor-pointer hover:bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200 transition-transform "
-                    onClick={() => setSelectedHouse(house)}
+                    onClick={() => {
+                      setSelectedHouse(house);
+                      setTimeout(() => {
+                        if (window.innerWidth <= 1024) {
+                          document
+                            .getElementById("house-details")
+                            ?.scrollIntoView({
+                              behavior: "smooth",
+                              block: "start",
+                            });
+                        }
+                      }, 100); // Opóźnienie, żeby React zdążył wyrenderować szczegóły
+                    }}
                   >
                     <h3 className="text-xl font-bold text-gray-800">
                       Dom {house.numer}
@@ -182,7 +194,8 @@ export default function Houses() {
         )}
 
         <div
-          className=" w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg"
+          id="house-details"
+          className=" w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg scroll-mt-56"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
