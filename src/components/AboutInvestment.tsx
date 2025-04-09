@@ -33,7 +33,7 @@ export default function AboutInvestment() {
             </p>
           </div>
           <Image
-            src="/render1.png"
+            src="/render1.webp"
             alt="Render 1"
             width={950}
             height={600}
@@ -52,7 +52,7 @@ export default function AboutInvestment() {
             height={600}
             className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
-            data-aos-duration="1000"            
+            data-aos-duration="1000"
             priority={true}
           />
 

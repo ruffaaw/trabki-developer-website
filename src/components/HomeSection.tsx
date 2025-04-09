@@ -3,13 +3,14 @@ import Link from "next/link";
 
 export default function HomeSection() {
   return (
-    <section id="home" className=" pt-20 h-screen w-full ">
+    <section id="home" className="pt-20 h-screen w-full ">
       <Image
-        src="/render1.png"
-        alt="Tło sekcji"
+        src="/render1.webp"
         fill
-        priority
-        className="object-cover object-center"
+        priority={true}
+        quality={100}
+        alt="Background image"
+        className="object-cover"
         data-aos="fade-in"
         data-aos-duration="2000"
       />

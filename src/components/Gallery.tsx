@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const galleryImages = [
-  "/render1.png",
+  "/render1.webp",
   "/render2.png",
   "/render3.png",
   "/render4.png",
