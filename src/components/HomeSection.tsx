@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="pt-20 h-screen w-full ">
+    <section id="home" className="pt-20 h-screen w-full relative">
       <Image
         src="/render1.webp"
         fill
