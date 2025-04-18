@@ -13,6 +13,7 @@ export default function HomeSection() {
         className="object-cover"
         data-aos="fade-in"
         data-aos-duration="2000"
+        unoptimized
       />
       <div
         className="h-full w-full flex flex-col justify-center items-center"
@@ -29,6 +30,7 @@ export default function HomeSection() {
           data-aos-duration="1000"
           className="md:hidden drop-shadow-md -mt-16"
           priority={true}
+          unoptimized
         />
         <Image
           src="/logo_kwadratowe.png"
@@ -40,6 +42,7 @@ export default function HomeSection() {
           data-aos-duration="1000"
           className="max-md:hidden drop-shadow-md"
           priority={true}
+          unoptimized
         />
         <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10">
           <Link
