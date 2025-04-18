@@ -46,6 +46,8 @@ export default function Gallery() {
                 width={1200}
                 height={500}
                 className="rounded-lg shadow-lg object-cover"
+                unoptimized
+                quality={100}
               />
             </SwiperSlide>
           ))}
