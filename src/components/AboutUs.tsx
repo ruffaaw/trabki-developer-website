@@ -7,7 +7,11 @@ export default function AboutUs() {
       className="w-full h-full bg-color5 relative scroll-mt-20"
     >
       <div className="text-center">
-        <p className="text-3xl sm:text-4xl lg:text-6xl font-bold text-color2">
+        <p
+          className="text-3xl sm:text-4xl lg:text-6xl font-bold text-color2"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           POZNAJ NAS
         </p>
       </div>
