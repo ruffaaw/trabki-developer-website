@@ -17,13 +17,35 @@ const galleryImages = [
 export default function Gallery() {
   return (
     <section
-      id="gallery"
+      id="galeria"
       className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-10 "
     >
+      <div>
+        <p
+          className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          GALERIA INWESTYCJI
+        </p>
+      </div>
+      <div className="flex flex-col justify-center items-center p-4 text-color3">
+        <h2
+          className="text-2xl sm:text-3xl font-bold mb-5 text-center"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          Zapraszamy do zapoznania się z&nbsp;wizualizacjami osiedla. <br />
+          Aktualizujemy stronę o&nbsp;zdjęcia z&nbsp;kolejnych etapów budowy –
+          bądź na bieżąco!{" "}
+        </h2>
+      </div>
       <div
-        className="w-full lg:w-9/12 pt-20"
+        className="w-full lg:w-9/12"
         data-aos="zoom-in"
         data-aos-duration="1000"
+        data-aos-delay="200"
       >
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
