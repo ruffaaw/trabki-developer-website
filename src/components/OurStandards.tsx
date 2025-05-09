@@ -4,11 +4,11 @@ export default function OurStandards() {
   return (
     <section
       id="nasze-standardy"
-      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20 "
+      className="w-full h-full flex flex-col items-center bg-color1 relative scroll-mt-20 py-16 lg:py-20"
     >
-      <div>
+      <div className="mb-12 lg:mb-16">
         <p
-          className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2"
+          className="text-3xl sm:text-4xl lg:text-6xl text-green4  font-bold text-center break-words max-w-full text-color2"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
@@ -16,10 +16,10 @@ export default function OurStandards() {
         </p>
       </div>
 
-      <div className="flex flex-col px-6 w-full pt-4">
-        <div className="flex flex-col justify-center items-center p-4 pb-8 text-color3">
+      <div className="flex flex-col px-6 w-full ">
+        <div className="flex flex-col justify-center items-center text-color3 mb-16 lg:mb-20">
           <h2
-            className="text-2xl sm:text-3xl font-bold mb-5 text-center"
+            className="text-2xl sm:text-3xl font-bold  text-center"
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-delay="100"
@@ -28,17 +28,17 @@ export default function OurStandards() {
           </h2>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-12 lg:gap-16 mb-20 lg:mb-28">
           <div
-            className="p-4 text-color3"
+            className=" text-color3"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Wnętrza, które zachwycają:
             </h2>
-            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify">
+            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify mb-6 space-y-2">
               <li>
                 <strong>Idealnie gładkie ściany:</strong> dzięki wewnętrznym
                 tynkom gipsowym, zacieranych na gładko, Twoje wnętrza będą
@@ -69,7 +69,7 @@ export default function OurStandards() {
             alt="Wizualizacja wnętrza"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
+            className="shadow-lg  w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="200"
@@ -77,13 +77,13 @@ export default function OurStandards() {
           />
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center  text-center lg:text-left gap-12 lg:gap-16 mb-20 lg:mb-28">
           <Image
             src="/render4.png"
             alt="Widok pojedyńczego budynku"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
+            className="shadow-lg w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-left"
             data-aos-duration="1000"
             priority={true}
@@ -93,10 +93,10 @@ export default function OurStandards() {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Solidność i&nbsp;energooszczędność na zewnątrz:
             </h2>
-            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify">
+            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify mb-6 space-y-2">
               <li>
                 <strong>Prywatność i&nbsp;cisza bez sąsiadów za ścianą:</strong>{" "}
                 każdy budynek w&nbsp;zabudowie bliźniaczej posiada niezależne
@@ -119,16 +119,16 @@ export default function OurStandards() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center  text-center lg:text-left gap-12 lg:gap-16 ">
           <div
-            className="p-4 text-color3"
+            className=" text-color3"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Przemyślane otoczenie dla Twojej wygody:
             </h2>
-            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify">
+            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify mb-6 space-y-2">
               <li>
                 <strong>Relaks na świeżym powietrzu:</strong> przestronny taras
                 z&nbsp;kostki brukowej o&nbsp;powierzchni 18&nbsp;m² (6x3 metry)
@@ -154,7 +154,7 @@ export default function OurStandards() {
             alt="Widok osiedla"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
+            className="shadow-lg w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
             priority={true}

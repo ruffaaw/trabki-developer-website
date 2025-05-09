@@ -5,11 +5,11 @@ export default function AboutInvestment() {
   return (
     <section
       id="o-inwestycji"
-      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20 py-16 lg:py-20"
     >
-      <div>
+      <div className="mb-12 lg:mb-16">
         <p
-          className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2"
+          className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold text-center break-words max-w-full text-color2"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
@@ -17,10 +17,10 @@ export default function AboutInvestment() {
         </p>
       </div>
 
-      <div className="flex flex-col px-6 w-full pt-4">
-        <div className="flex flex-col justify-center items-center p-4 pb-8 text-color3">
+      <div className="flex flex-col px-6 w-full">
+        <div className="flex flex-col justify-center items-center text-color3 mb-16 lg:mb-20 ">
           <h2
-            className="text-2xl sm:text-3xl font-bold mb-5 text-center"
+            className="text-2xl sm:text-3xl font-bold text-center mb-6"
             data-aos="zoom-in"
             data-aos-duration="1000"
             data-aos-delay="100"
@@ -43,17 +43,17 @@ export default function AboutInvestment() {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-12 lg:gap-16 mb-20 lg:mb-28 px-4">
           <div
-            className="p-4 text-color3"
+            className=" text-color3 "
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="300"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Lokalizacja - spokojny azyl blisko miasta
             </h2>
-            <p className="text-base sm:text-xl text-justify mb-5">
+            <p className="text-base sm:text-xl text-justify mb-8">
               Nasza inwestycja <strong>DOMY POD KRAKOWEM</strong> położona jest
               w&nbsp;malowniczych <strong> Trąbkach</strong>, zaledwie 5 km od
               administracyjnych granic Krakowa. Dzięki temu możesz cieszyć się
@@ -83,7 +83,7 @@ export default function AboutInvestment() {
             alt="Render z góry"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
+            className="shadow-lg lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -91,26 +91,26 @@ export default function AboutInvestment() {
           />
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-12 lg:gap-16 mb-20 lg:mb-28 px-4">
           <Image
             src="/render2.png"
             alt="Render 2"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
+            className="shadow-lg lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-left"
             data-aos-duration="1000"
             priority={true}
           />
           <div
-            className="p-4 text-color3"
+            className=" text-color3"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Wnętrza - zaprojektowane z&nbsp;myślą o&nbsp;Twojej wygodzie
             </h2>
-            <p className="text-base sm:text-xl text-justify">
+            <p className="text-base sm:text-xl text-justify mb-6">
               W&nbsp;naszych domach każdy metr kwadratowy został starannie
               przemyślany, aby zapewnić maksymalną funkcjonalność
               i&nbsp;komfort. Przestronny układ pomieszczeń, optymalne
@@ -118,7 +118,7 @@ export default function AboutInvestment() {
               w&nbsp;której codzienne życie staje się przyjemnością. Do
               dyspozycji przyszłych mieszkańców oddajemy:
             </p>
-            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify">
+            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify mb-6 space-y-2">
               <li>
                 <strong>5 przestronnych pokoi</strong>,
               </li>
@@ -148,13 +148,13 @@ export default function AboutInvestment() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pb-8 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-12 lg:gap-16  px-4">
           <div
-            className="p-4 text-color3"
+            className=" text-color3"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
               Spokój i&nbsp;harmonia - bezpieczny dom w&nbsp;otoczeniu natury
             </h2>
             <p className="text-base sm:text-xl text-justify">
@@ -173,7 +173,7 @@ export default function AboutInvestment() {
             alt="Render 3"
             width={950}
             height={600}
-            className="shadow-lg mb-6 lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
+            className="shadow-lg w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
             priority={true}

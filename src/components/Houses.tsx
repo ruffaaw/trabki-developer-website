@@ -73,20 +73,20 @@ export default function Houses() {
     <section
       id="twoj-dom"
       rel="noopener noreferrer"
-      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-color1 relative scroll-mt-20 py-16 lg:py-20"
     >
-      <div>
+      <div className="mb-12 lg:mb-16">
         <p
-          className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2"
+          className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold text-center break-words max-w-full text-color2"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           WYBIERZ SWÓJ DOM
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center p-4 text-color3">
+      <div className="flex flex-col justify-center px-6 items-center text-color3 mb-16 lg:mb-20">
         <h2
-          className="text-2xl sm:text-3xl font-bold mb-5 text-center"
+          className="text-2xl sm:text-3xl font-bold  text-center"
           data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-delay="100"
@@ -118,7 +118,7 @@ export default function Houses() {
         </button>
       </div> */}
 
-      <div className="flex flex-col lg:flex-row items-start justify-center w-full mt-10 px-6 lg:px-16 gap-6 lg:gap-10">
+      <div className="flex flex-col lg:flex-row items-start justify-center w-full  px-6 lg:px-16 gap-6 lg:gap-10">
         <div
           className="relative w-full lg:w-2/3"
           data-aos="fade-down"
@@ -251,7 +251,7 @@ export default function Houses() {
                   {selectedHouse.dzialka} ara
                 </p>
 
-                <div className="mt-4">
+                <div className="mt-6">
                   <a
                     href={selectedHouse.pdf}
                     target="_blank"
@@ -261,20 +261,17 @@ export default function Houses() {
                     Zobacz szczegóły oferty
                   </a>
                 </div>
+                <button
+                  className="mt-6 block px-4 py-2 bg-color3 text-color5 font-medium text-center rounded-lg hover:bg-color2 hover:scale-110 transition-all shadow-md w-full"
+                  onClick={() => setSelectedHouse(null)}
+                >
+                  Zamknij
+                </button>
               </div>
-
-              <button
-                className="mt-6 block px-4 py-2 bg-color3 text-color5 font-medium text-center rounded-lg hover:bg-color2 hover:scale-110 transition-all shadow-md w-full"
-                onClick={() => setSelectedHouse(null)}
-              >
-                Zamknij
-              </button>
             </>
           ) : (
             <p className="text-gray-500 text-lg">
-              {viewMode === "map"
-                ? "Kliknij na numer domu, aby zobaczyć szczegóły."
-                : "Wybierz dom z listy, aby zobaczyć szczegóły."}
+              Kliknij na numer domu, aby zobaczyć szczegóły.
             </p>
           )}
         </div>
