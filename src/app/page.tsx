@@ -6,7 +6,6 @@ import HomeSection from "@/components/HomeSection";
 import Houses from "@/components/Houses";
 import AboutInvestment from "@/components/AboutInvestment";
 import AboutUs from "@/components/AboutUs";
-import OurValues from "@/components/OurValues";
 import OurStandards from "@/components/OurStandards";
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <AboutInvestment />
       <OurStandards />
       <AboutUs />
-      <OurValues />
       <Houses />
       <Gallery />
       <Contact />
