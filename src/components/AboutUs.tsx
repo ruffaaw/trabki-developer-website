@@ -60,7 +60,7 @@ export default function AboutUs() {
               <h3 className="text-xl sm:text-2xl font-bold text-color2 mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-base sm:text-lg text-color3">
+              <p className="text-base sm:text-lg text-color3 text-justify">
                 {benefit.description}
               </p>
             </div>
