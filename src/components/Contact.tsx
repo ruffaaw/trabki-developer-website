@@ -105,13 +105,13 @@ export default function Contact() {
       <div className="max-w-screen-xl w-full text-center">
         <div>
           <p className="text-3xl sm:text-4xl lg:text-6xl text-color2 font-bold break-words max-w-full">
-            Gotowy, by spełnić swoje marzenia o wnętrzu?
+            Gotowy, by spełnić swoje marzenia o&nbsp;wnętrzu?
           </p>
         </div>
         <p className="text-lg md:text-3xl font-bold text-brown pt-3">
-          Skontaktuj się z nami, aby rozpocząć realizację swojego wymarzonego
-          projektu! Razem stworzymy przestrzeń, która będzie dla Ciebie
-          prawdziwym domem.
+          Skontaktuj się z&nbsp;nami, aby rozpocząć realizację swojego
+          wymarzonego projektu! Razem stworzymy przestrzeń, która będzie dla
+          Ciebie prawdziwym domem.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
           <div className="w-full flex items-stretch">
