@@ -87,7 +87,6 @@ export default function AboutInvestment() {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="300"
-            priority={true}
           />
         </div>
 
@@ -100,7 +99,6 @@ export default function AboutInvestment() {
             className="shadow-lg lg:mb-0 w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-left"
             data-aos-duration="1000"
-            priority={true}
           />
           <div
             className=" text-color3"
@@ -176,7 +174,6 @@ export default function AboutInvestment() {
             className="shadow-lg w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
-            priority={true}
           />
         </div>
       </div>

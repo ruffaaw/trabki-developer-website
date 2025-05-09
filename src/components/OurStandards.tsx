@@ -73,7 +73,6 @@ export default function OurStandards() {
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="200"
-            priority={true}
           />
         </div>
 
@@ -86,7 +85,6 @@ export default function OurStandards() {
             className="shadow-lg w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-left"
             data-aos-duration="1000"
-            priority={true}
           />
           <div
             className="p-4 text-color3"
@@ -157,7 +155,6 @@ export default function OurStandards() {
             className="shadow-lg w-[600px] max-lg:w-[950px] xl:w-[950px]"
             data-aos="fade-right"
             data-aos-duration="1000"
-            priority={true}
           />
         </div>
       </div>
