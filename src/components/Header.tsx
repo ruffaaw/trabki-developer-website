@@ -38,7 +38,7 @@ export default function Header() {
           { href: "#o-inwestycji", label: "O inwestycji" },
           { href: "#nasze-standardy", label: "Nasze standardy" },
           { href: "#o-nas", label: "O nas" },
-          { href: "#twoj-dom", label: "Domy" },
+          { href: "#twoj-dom", label: "Twój dom" },
           { href: "#galeria", label: "Galeria" },
           { href: "#kontakt", label: "Kontakt" },
         ].map((item) => (
