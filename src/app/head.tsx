@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Trąbki",
+  title: "Domy pod krakowem",
   description: "",
   image: "/logo_kwadratowe.png",
 };

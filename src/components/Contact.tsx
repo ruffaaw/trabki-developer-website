@@ -99,21 +99,21 @@ export default function Contact() {
 
   return (
     <section
-      id="contact"
-      className="w-full flex flex-col items-center bg-color5 relative scroll-mt-10 py-10 px-4"
+      id="kontakt"
+      className="w-full flex flex-col items-center bg-color1 relative scroll-mt-10 py-16 lg:py-20 px-4"
     >
       <div className="max-w-screen-xl w-full text-center">
-        <div>
+        <div className="mb-12 lg:mb-16">
           <p className="text-3xl sm:text-4xl lg:text-6xl text-color2 font-bold break-words max-w-full">
-            Gotowy, by spełnić swoje marzenia o wnętrzu?
+            Gotowy, by spełnić swoje marzenia o&nbsp;wnętrzu?
           </p>
         </div>
-        <p className="text-lg md:text-3xl font-bold text-brown pt-3">
-          Skontaktuj się z nami, aby rozpocząć realizację swojego wymarzonego
-          projektu! Razem stworzymy przestrzeń, która będzie dla Ciebie
-          prawdziwym domem.
+        <p className="text-lg md:text-3xl font-bold text-brown mb-16 lg:mb-20">
+          Skontaktuj się z&nbsp;nami, aby rozpocząć realizację swojego
+          wymarzonego projektu! Razem stworzymy przestrzeń, która będzie dla
+          Ciebie prawdziwym domem.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
           <div className="w-full flex items-stretch">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3194.8443747714277!2d20.140027999999997!3d50.013461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDAwJzQ4LjUiTiAyMMKwMDgnMjQuMSJF!5e1!3m2!1spl!2spl!4v1735824868741!5m2!1spl!2spl"
@@ -228,7 +228,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center mt-8 gap-6">
+        <div className="flex flex-wrap justify-center items-center mt-12 gap-10">
           <a
             href="https://www.n20.pl/"
             target="_blank"

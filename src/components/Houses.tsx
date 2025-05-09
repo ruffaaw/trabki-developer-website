@@ -19,10 +19,10 @@ export default function Houses() {
   const [viewMode, setViewMode] = useState<"map" | "list">("map");
   const [houseOffers, setHouseOffers] = useState<any[]>([]);
 
-  const handleViewChange = (p0: string) => {
-    setViewMode(viewMode === "map" ? "list" : "map");
-    setSelectedHouse(null);
-  };
+  // const handleViewChange = (p0: string) => {
+  //   setViewMode(viewMode === "map" ? "list" : "map");
+  //   setSelectedHouse(null);
+  // };
 
   const getStatusText = (status: number) => {
     switch (status) {
@@ -71,17 +71,31 @@ export default function Houses() {
 
   return (
     <section
-      id="houses"
+      id="twoj-dom"
       rel="noopener noreferrer"
-      className="w-full h-full flex flex-col items-center bg-color5 relative scroll-mt-20"
+      className="w-full h-full flex flex-col items-center bg-color1 relative scroll-mt-20 py-16 lg:py-20"
     >
-      <div>
-        <p className="text-3xl sm:text-4xl lg:text-6xl text-green4 pt-10 font-bold text-center break-words max-w-full text-color2">
-          DOMY
+      <div className="mb-12 lg:mb-16">
+        <p
+          className="text-3xl sm:text-4xl lg:text-6xl text-green4 font-bold text-center break-words max-w-full text-color2"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          WYBIERZ SWÓJ DOM
         </p>
       </div>
+      <div className="flex flex-col justify-center px-6 items-center text-color3 mb-16 lg:mb-20">
+        <h2
+          className="text-2xl sm:text-3xl font-bold  text-center"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          Kliknij wybrany dom na mapie, by poznać szczegóły oferty
+        </h2>
+      </div>
 
-      <div className="mt-6 flex" data-aos="zoom-in" data-aos-duration="1000">
+      {/* <div className="flex" data-aos="zoom-in" data-aos-duration="1000">
         <button
           onClick={() => handleViewChange("map")}
           className={`px-6 py-2 rounded-s-md transition-all duration-300 ${
@@ -102,49 +116,48 @@ export default function Houses() {
         >
           Lista domów
         </button>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col lg:flex-row items-start justify-center w-full mt-10 px-6 lg:px-16 gap-6 lg:gap-10">
-        {viewMode === "map" && (
-          <div
-            className="relative w-full lg:w-2/3"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          >
-            <Image
-              src="/zGory1.png"
-              alt="Mapa domów"
-              layout="responsive"
-              width={1200}
-              height={800}
-              className="rounded-lg shadow-lg object-cover"
-              priority={true}
-            />
-            {houseOffers.map((house) => (
-              <button
-                key={house.Id}
-                style={{
-                  position: "absolute",
-                  top: house.top,
-                  left: house.left,
-                  transform: "translate(-50%, -50%)",
-                }}
-                className={`${
-                  house.status === 0
-                    ? "bg-red-500"
-                    : house.status === 1
-                    ? "bg-green-500"
-                    : "bg-yellow-500"
-                } text-white rounded-full w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-xs md:text-sm lg:text-base`}
-                onClick={() => setSelectedHouse(house)}
-              >
-                {house.numer}
-              </button>
-            ))}
-          </div>
-        )}
+      <div className="flex flex-col lg:flex-row items-start justify-center w-full  px-6 lg:px-16 gap-6 lg:gap-10">
+        <div
+          className="relative w-full lg:w-2/3"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <Image
+            src="/zGory1.png"
+            alt="Mapa domów"
+            layout="responsive"
+            width={1200}
+            height={800}
+            className="rounded-lg shadow-lg object-cover"
+            priority={true}
+          />
+          {houseOffers.map((house) => (
+            <button
+              key={house.Id}
+              style={{
+                position: "absolute",
+                top: house.top,
+                left: house.left,
+                transform: "translate(-50%, -50%)",
+              }}
+              className={`${
+                house.status === 0
+                  ? "bg-red-500"
+                  : house.status === 1
+                  ? "bg-green-500"
+                  : "bg-yellow-500"
+              } text-white rounded-full w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 flex items-center justify-center font-bold shadow-md hover:scale-110 transition-transform text-xs md:text-sm lg:text-base`}
+              onClick={() => setSelectedHouse(house)}
+            >
+              {house.numer}
+            </button>
+          ))}
+        </div>
 
-        {viewMode === "list" && (
+        {/* {viewMode === "list" && (
           <div
             className="w-full lg:w-2/3 bg-white p-6 rounded-lg shadow-lg"
             data-aos="fade-up"
@@ -191,13 +204,14 @@ export default function Houses() {
               </ul>
             </div>
           </div>
-        )}
+        )} */}
 
         <div
           id="house-details"
           className=" w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-lg scroll-mt-56"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-delay="200"
         >
           {selectedHouse ? (
             <>
@@ -237,7 +251,7 @@ export default function Houses() {
                   {selectedHouse.dzialka} ara
                 </p>
 
-                <div className="mt-4">
+                <div className="mt-6">
                   <a
                     href={selectedHouse.pdf}
                     target="_blank"
@@ -247,20 +261,17 @@ export default function Houses() {
                     Zobacz szczegóły oferty
                   </a>
                 </div>
+                <button
+                  className="mt-6 block px-4 py-2 bg-color3 text-color5 font-medium text-center rounded-lg hover:bg-color2 hover:scale-110 transition-all shadow-md w-full"
+                  onClick={() => setSelectedHouse(null)}
+                >
+                  Zamknij
+                </button>
               </div>
-
-              <button
-                className="mt-6 block px-4 py-2 bg-color3 text-color5 font-medium text-center rounded-lg hover:bg-color2 hover:scale-110 transition-all shadow-md w-full"
-                onClick={() => setSelectedHouse(null)}
-              >
-                Zamknij
-              </button>
             </>
           ) : (
             <p className="text-gray-500 text-lg">
-              {viewMode === "map"
-                ? "Kliknij na numer domu, aby zobaczyć szczegóły."
-                : "Wybierz dom z listy, aby zobaczyć szczegóły."}
+              Kliknij na numer domu, aby zobaczyć szczegóły.
             </p>
           )}
         </div>
