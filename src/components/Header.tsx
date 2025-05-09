@@ -35,12 +35,12 @@ export default function Header() {
         data-aos-duration="1000"
       >
         {[
-          { href: "#about-investment", label: "O inwestycji" },
-          { href: "#about-us", label: "O nas" },
-          { href: "#our-values", label: "Nasze wartości" },
-          { href: "#houses", label: "Domy" },
-          { href: "#gallery", label: "Galeria" },
-          { href: "#contact", label: "Kontakt" },
+          { href: "#o-inwestycji", label: "O inwestycji" },
+          { href: "#nasze-standardy", label: "Nasze standardy" },
+          { href: "#o-nas", label: "O nas" },
+          { href: "#twoj-dom", label: "Domy" },
+          { href: "#galeria", label: "Galeria" },
+          { href: "#kontakt", label: "Kontakt" },
         ].map((item) => (
           <Link
             key={item.href}
@@ -75,42 +75,42 @@ export default function Header() {
       {isMenuOpen && (
         <div className="fixed flex flex-col items-center top-20 pt-4 bg-color2 shadow-md z-30 w-screen h-auto ">
           <Link
-            href="#about-investment"
+            href="#o-inwestycji"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 "
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">O inwestycji</p>
           </Link>
           <Link
-            href="#about-us"
+            href="#nasze-standardy"
+            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <p className="break-words max-w-full">Nasze standardy</p>
+          </Link>
+          <Link
+            href="#o-nas"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 "
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">O nas</p>
           </Link>
           <Link
-            href="#our-values"
+            href="#twoj-dom"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
-            <p className="break-words max-w-full">Nasze wartości</p>
+            <p className="break-words max-w-full">Twój dom</p>
           </Link>
           <Link
-            href="#houses"
-            className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <p className="break-words max-w-full">Domy</p>
-          </Link>
-          <Link
-            href="#gallery"
+            href="#galeria"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
             <p className="break-words max-w-full">Galeria</p>
           </Link>
           <Link
-            href="#contact"
+            href="#kontakt"
             className="text-white text-xl w-full py-5 flex justify-center hover:bg-color1 break-words max-w-full"
             onClick={() => setIsMenuOpen(false)}
           >
