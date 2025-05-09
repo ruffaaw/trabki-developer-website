@@ -240,7 +240,6 @@ export default function Contact() {
               alt="N20"
               width={255}
               height={160}
-              priority={true}
             />
           </a>
           <div className="text-left font-bold text-gray-800 max-w-md">
