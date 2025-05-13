@@ -4,7 +4,7 @@ export default function OurStandards() {
   return (
     <section
       id="nasze-standardy"
-      className="w-full h-full flex flex-col items-center bg-color1 relative scroll-mt-20 py-16 lg:py-20"
+      className="w-full h-full flex flex-col items-center bg-color1 relative scroll-mt-20 py-16 lg:py-20 px-4"
     >
       <div className="mb-12 lg:mb-16">
         <p
@@ -41,8 +41,8 @@ export default function OurStandards() {
             <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify mb-6 space-y-2">
               <li>
                 <strong>Idealnie gładkie ściany:</strong> dzięki wewnętrznym
-                tynkom gipsowym, zacieranych na gładko, Twoje wnętrza będą
-                gotowe do malowania i&nbsp;aranżacji bez dodatkowego wysiłku.
+                tynkom gipsowym, zacieranym na gładko, Twoje wnętrza będą gotowe
+                do malowania i&nbsp;aranżacji bez dodatkowego wysiłku.
               </li>
               <li>
                 <strong>Cisza i&nbsp;ciepło przez cały rok:</strong> trzyszybowa
@@ -140,7 +140,7 @@ export default function OurStandards() {
                 inwestycja w&nbsp;ekologię i&nbsp;wygodę.
               </li>
               <li>
-                <strong>Poczucie bezpieczeństwa i&nbsp;komfort wjazdu:</strong>
+                <strong>Poczucie bezpieczeństwa i&nbsp;komfort wjazdu: </strong>
                 ogrodzenie panelowe wokół działki z&nbsp;automatyczną bramą
                 sterowaną pilotem oraz wybrukowany podjazd to wygoda
                 i&nbsp;bezpieczeństwo na co dzień.

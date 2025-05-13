@@ -114,29 +114,15 @@ export default function AboutInvestment() {
               i&nbsp;komfort. Przestronny układ pomieszczeń, optymalne
               doświetlenie naturalnym światłem tworzą przyjazną atmosferę,
               w&nbsp;której codzienne życie staje się przyjemnością. Do
-              dyspozycji przyszłych mieszkańców oddajemy:
+              dyspozycji przyszłych mieszkańców oddajemy{" "}
+              <strong>5 przestronnych pokoi</strong>, komfortowy{" "}
+              <strong>salon z&nbsp;jadalnią</strong>, nowoczesną{" "}
+              <strong>kuchnię</strong>, praktyczną
+              <strong> pralnię</strong> oraz <strong>2&nbsp;łazienki</strong>.
+              Dodatkowym atutem jest wygodny{" "}
+              <strong>jednostanowiskowy garaż</strong> z&nbsp;bezpośrednim
+              wejściem do domu.
             </p>
-            <ul className="list-disc list-inside text-base sm:text-lg ml-4 sm:ml-6 text-justify mb-6 space-y-2">
-              <li>
-                <strong>5 przestronnych pokoi</strong>,
-              </li>
-              <li>
-                komfortowy <strong>salon z&nbsp;jadalnią</strong>,
-              </li>
-              <li>
-                nowoczesną <strong>kuchnię</strong>,
-              </li>
-              <li>
-                praktyczną <strong>pralnię</strong>,
-              </li>
-              <li>
-                <strong>2 łazienki</strong>,
-              </li>
-              <li>
-                <strong>jednostanowiskowy garaż</strong> z&nbsp;bezpośrednim
-                wejściem do domu.
-              </li>
-            </ul>
             <p className="text-base sm:text-xl text-justify">
               Dzięki <strong>dużym przeszkleniom </strong>wnętrza są wypełnione
               naturalnym światłem, a&nbsp;nowoczesna aranżacja daje Ci

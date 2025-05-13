@@ -33,13 +33,13 @@ export default function AboutUs() {
           <strong>
             Z&nbsp;nami zbudujesz więcej niż dom – stworzysz swoje wymarzone
             miejsce na ziemi.
-          </strong>
+          </strong>{" "}
           Nasza pasja i&nbsp;doświadczenie gwarantują nie tylko najwyższą jakość
           wykonania i&nbsp;terminowość, ale przede wszystkim
           <strong> indywidualne podejście </strong>
           do każdego klienta. Wierzymy, że Twój dom powinien być
           odzwierciedleniem Twoich marzeń i&nbsp;stylu życia. Wybierając{" "}
-          <strong>DOMY POD KRAKOWEM</strong>, inwestujesz w&nbsp;komfort,
+          <strong>DOMY POD KRAKOWEM</strong> inwestujesz w&nbsp;komfort,
           przyszłość i&nbsp;szczęście swojej rodziny
         </p>
       </div>
