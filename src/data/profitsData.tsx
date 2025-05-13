@@ -10,11 +10,11 @@ export const benefits = [
         <strong>
           Tworzymy domy z&nbsp;myślą o&nbsp;Twoim szczęściu i&nbsp; komforcie.
         </strong>{" "}
-        Zaczynamy od uważnego słuchania Twoich potrzeb imarzeń, aby stworzyć
-        przestrzeń idealnie dopasowaną do Twojego stylu życia. Naszą pasją jest
-        budowanie miejsc, w&nbsp;których rodzi się radość i&nbsp;gdzie codzienne
-        życie staje się przyjemnością. Chcemy, aby Twój nowy dom był tłem dla
-        najpiękniejszych wspomnień.
+        Zaczynamy od uważnego słuchania Twoich potrzeb i&nbsp;marzeń, aby
+        stworzyć przestrzeń idealnie dopasowaną do Twojego stylu życia. Naszą
+        pasją jest budowanie miejsc, w&nbsp;których rodzi się radość
+        i&nbsp;gdzie codzienne życie staje się przyjemnością. Chcemy, aby Twój
+        nowy dom był tłem dla najpiękniejszych wspomnień.
       </>
     ),
     delay: 100,
@@ -63,13 +63,13 @@ export const benefits = [
       <>
         <strong>
           Budujemy trwałe relacje oparte na zaufaniu i&nbsp;partnerstwie.
-        </strong>
+        </strong>{" "}
         Wierzymy, że najlepsze efekty osiągamy, blisko współpracując
         z&nbsp;naszymi klientami. Dlatego stawiamy na otwartą komunikację,
-        wzajemny szacunek izrozumienie na każdym etapie – od pierwszej rozmowy,
-        poprzez projektowanie, aż po finalizację budowy. Chcemy, abyś czuł się
-        częścią procesu i&nbsp;miał pewność, że Twoje potrzeby są dla nas
-        najważniejsze.
+        wzajemny szacunek i&nbsp;zrozumienie na każdym etapie – od pierwszej
+        rozmowy, poprzez projektowanie, aż po finalizację budowy. Chcemy, abyś
+        czuł się częścią procesu i&nbsp;miał pewność, że Twoje potrzeby są dla
+        nas najważniejsze.
       </>
     ),
     delay: 400,
