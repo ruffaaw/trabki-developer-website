@@ -1,7 +1,8 @@
 export const metadata = {
   title: "Domy pod krakowem",
-  description: "",
-  image: "/logo_kwadratowe.png",
+  description:
+    "DOMY POD KRAKOWEM w Trąbkach - nowoczesne domy bliźniacze 146m² w zielonej okolicy z doskonałą komunikacją do Krakowa (5km od granic miasta). Sprawdź wyjątkowe wnętrza, premium standard i spokojną lokalizację w harmonii z naturą.",
+  image: "/logo_kwadratowe.webp",
 };
 
 export default function Head() {
