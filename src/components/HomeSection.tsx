@@ -48,26 +48,26 @@ export default function HomeSection() {
             data-aos-duration="2000"
           >
             <Image
-              src="/logo_kwadratowe.png"
+              src="/logo_kwadratowe.webp"
               alt="Logo"
               width={300}
               height={300}
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
-              className="md:hidden drop-shadow-md -mt-16"
+              className="md:hidden drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] mb-8"
               priority={true}
               unoptimized
             />
             <Image
-              src="/logo_kwadratowe.png"
+              src="/logo_kwadratowe.webp"
               alt="Logo"
-              width={600}
+              width={450}
               height={300}
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
-              className="max-md:hidden drop-shadow-md"
+              className="max-md:hidden drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)] mb-8"
               priority={true}
               unoptimized
             />

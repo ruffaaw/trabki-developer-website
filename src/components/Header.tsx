@@ -21,11 +21,11 @@ export default function Header() {
           }}
         >
           <Image
-            src="/logo_plaskie.png"
+            src="/logo_plaskie.webp"
             alt="Logo"
             width={208}
             height={64}
-            className="h-16 w-52 mr-2 drop-shadow-sm"
+            className="h-16 w-52 mr-2 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"
           />
         </Link>
       </div>
