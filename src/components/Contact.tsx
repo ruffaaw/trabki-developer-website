@@ -108,7 +108,7 @@ export default function Contact() {
             Gotowy, by spełnić swoje marzenia o&nbsp;wnętrzu?
           </p>
         </div>
-        <p className="text-lg md:text-3xl font-bold text-brown mb-16 lg:mb-20">
+        <p className="text-lg md:text-3xl font-bold text-color3 mb-16 lg:mb-20">
           Skontaktuj się z&nbsp;nami, aby rozpocząć realizację swojego
           wymarzonego projektu! Razem stworzymy przestrzeń, która będzie dla
           Ciebie prawdziwym domem.
