@@ -61,7 +61,7 @@ export default function Contact() {
 
     const body = {
       email: "biuro@n20.pl", // do zamiany na odpowiedni adres
-      subject: `Trąbki - Wiadomość od: ${formData.name}`,
+      subject: `Domy Pod Krakowem - Wiadomość od: ${formData.name}`,
       message: `Imię i nazwisko: ${formData.name}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\n\n${formData.message}`,
     };
 
