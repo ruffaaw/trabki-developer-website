@@ -74,7 +74,7 @@ export default function HomeSection() {
             <div className="flex max-md:flex-col max-md:space-y-5 max-md:w-full max-md:items-center md:space-x-10">
               <Link
                 className="py-3 w-56 max-md:w-3/5  text-color5 rounded-2xl bg-color3 hover:bg-color2 hover:text-white transition break-words max-w-full text-center drop-shadow-xl"
-                href="#houses"
+                href="#twoj-dom"
                 data-aos="zoom-in"
                 data-aos-delay="900"
                 data-aos-duration="1000"
@@ -83,7 +83,7 @@ export default function HomeSection() {
               </Link>
               <Link
                 className="py-3 w-56 max-md:w-3/5  text-color5 rounded-2xl bg-color3 hover:bg-color2 hover:text-white transition break-words max-w-full text-center drop-shadow-xl"
-                href="#contact"
+                href="#kontakt"
                 data-aos="zoom-in"
                 data-aos-delay="1100"
                 data-aos-duration="1000"
