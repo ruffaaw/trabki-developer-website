@@ -1,16 +1,19 @@
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Gallery from "@/components/Gallery";
-import Header from "@/components/Header";
-import HomeSection from "@/components/HomeSection";
-import Houses from "@/components/Houses";
-import AboutInvestment from "@/components/AboutInvestment";
-import AboutUs from "@/components/AboutUs";
-import OurStandards from "@/components/OurStandards";
+// import Contact from "@/components/Contact";
+// import Footer from "@/components/Footer";
+// import Gallery from "@/components/Gallery";
+// import Header from "@/components/Header";
+// import HomeSection from "@/components/HomeSection";
+// import Houses from "@/components/Houses";
+// import AboutInvestment from "@/components/AboutInvestment";
+// import AboutUs from "@/components/AboutUs";
+
+import WebsiteUnderConstruction from "@/components/WebsiteUnderConstruction";
+
+// import OurStandards from "@/components/OurStandards";
 export default function Home() {
   return (
     <div className="h-full w-full overflow-hidden">
-      <Header />
+      {/* <Header />
       <HomeSection />
       <AboutInvestment />
       <OurStandards />
@@ -18,7 +21,8 @@ export default function Home() {
       <Houses />
       <Gallery />
       <Contact />
-      <Footer />
+      <Footer /> */}
+      <WebsiteUnderConstruction />
     </div>
   );
 }
