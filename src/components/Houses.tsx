@@ -27,7 +27,7 @@ export default function Houses() {
   const getStatusText = (status: number) => {
     switch (status) {
       case 0:
-        return "Niedostępny";
+        return "Sprzedany";
       case 1:
         return "Dostępny";
       case 2:
@@ -241,10 +241,12 @@ export default function Houses() {
                   <span className="font-semibold">Pokoje:</span>{" "}
                   {selectedHouse.pokoje}
                 </p>
-                <p className="text-color3">
-                  <span className="font-semibold">Cena:</span>{" "}
-                  {selectedHouse.cena.toLocaleString()} zł
-                </p>
+                {selectedHouse.status !== 0 && (
+                  <p className="text-color3">
+                    <span className="font-semibold">Cena:</span>{" "}
+                    {selectedHouse.cena.toLocaleString()} zł
+                  </p>
+                )}
                 <p className="text-color3">
                   <span className="font-semibold">Działka:</span>{" "}
                   {selectedHouse.dzialka} ara
