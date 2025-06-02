@@ -241,12 +241,17 @@ export default function Houses() {
                   <span className="font-semibold">Pokoje:</span>{" "}
                   {selectedHouse.pokoje}
                 </p>
-                {selectedHouse.status !== 0 && (
-                  <p className="text-color3">
-                    <span className="font-semibold">Cena:</span>{" "}
-                    {selectedHouse.cena.toLocaleString()} zł
-                  </p>
-                )}
+                {selectedHouse.status !== 0 &&
+                  !(
+                    selectedHouse.status === 2 &&
+                    (selectedHouse.numer === "13" ||
+                      selectedHouse.numer === "14")
+                  ) && (
+                    <p className="text-color3">
+                      <span className="font-semibold">Cena:</span>{" "}
+                      {selectedHouse.cena.toLocaleString()} zł
+                    </p>
+                  )}
                 <p className="text-color3">
                   <span className="font-semibold">Działka:</span>{" "}
                   {selectedHouse.dzialka} ara
