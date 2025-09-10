@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { houseCoordinates } from "@/data/houseCoordinates";
+import { FaInfoCircle } from "react-icons/fa";
 
 type House = {
   id: string;
@@ -11,14 +12,20 @@ type House = {
   metraz: number;
   pokoje: number;
   cena: number;
+  cenaZaMetrKwadratowy: number;
   dzialka: number;
+  cena30: number;
 };
 
 export default function Houses() {
   const [selectedHouse, setSelectedHouse] = useState<House | null>(null);
   const [viewMode, setViewMode] = useState<"map" | "list">("map");
   const [houseOffers, setHouseOffers] = useState<any[]>([]);
+  const [openIndex, setOpenIndex] = useState(true);
 
+  const toggleOpen = () => {
+    setOpenIndex(!openIndex);
+  };
   // const handleViewChange = (p0: string) => {
   //   setViewMode(viewMode === "map" ? "list" : "map");
   //   setSelectedHouse(null);
@@ -57,6 +64,7 @@ export default function Houses() {
             ...house,
             top: coords?.top || 0,
             left: coords?.left || 0,
+            cenaZaMetrKwadratowy: Number(house.cena / house.metraz).toFixed(2),
           };
         });
 
@@ -241,17 +249,34 @@ export default function Houses() {
                   <span className="font-semibold">Pokoje:</span>{" "}
                   {selectedHouse.pokoje}
                 </p>
-                {selectedHouse.status !== 0 &&
-                  !(
-                    selectedHouse.status === 2 &&
-                    (selectedHouse.numer === "13" ||
-                      selectedHouse.numer === "14")
-                  ) && (
-                    <p className="text-color3">
-                      <span className="font-semibold">Cena:</span>{" "}
-                      {selectedHouse.cena.toLocaleString()} zł
-                    </p>
+                <div className="relative">
+                  <div className="text-color3 flex items-center space-x-2">
+                    <span className="font-semibold">
+                      Cena: {selectedHouse.cena.toLocaleString()} zł
+                    </span>
+                    <button
+                      onClick={() => toggleOpen()}
+                      className="p-1 rounded-full hover:bg-gray-200 transition"
+                    >
+                      <FaInfoCircle size={18} className="text-gray-500" />
+                    </button>
+                  </div>
+
+                  {openIndex && (
+                    <div
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 
+                        bg-white text-gray-700 text-sm shadow-lg rounded-lg p-3 
+                        border w-max z-10"
+                    >
+                      Najniższa cena z ostatnich 30 dni:{" "}
+                      {selectedHouse.cena30.toLocaleString()} zł
+                    </div>
                   )}
+                </div>
+                <p className="text-color3">
+                  <span className="font-semibold">Cena za metr:</span>{" "}
+                  {selectedHouse.cenaZaMetrKwadratowy.toLocaleString()} zł
+                </p>
                 <p className="text-color3">
                   <span className="font-semibold">Działka:</span>{" "}
                   {selectedHouse.dzialka} ara
